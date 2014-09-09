@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCS.MvvmCross.Plugins.MvxAnalytics.Core", "OCS.MvvmCross.Plugins.MvxAnalytics.Core\OCS.MvvmCross.Plugins.MvxAnalytics.Core.csproj", "{2A85A1E5-24AC-4021-8FE0-E09E9475FFB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCS.MvvmCross.Plugins.MvxAnalytics.Touch", "OCS.MvvmCross.Plugins.MvxAnalytics.Touch\OCS.MvvmCross.Plugins.MvxAnalytics.Touch.csproj", "{9BA2EEA4-171F-427A-B931-A2D55727AD1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCS.MvvmCross.Plugins.MvxAnalytics.Droid", "OCS.MvvmCross.Plugins.MvxAnalytics.Droid\OCS.MvvmCross.Plugins.MvxAnalytics.Droid.csproj", "{57B700D5-579D-4A95-A598-68B77098B10F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A85A1E5-24AC-4021-8FE0-E09E9475FFB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A85A1E5-24AC-4021-8FE0-E09E9475FFB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A85A1E5-24AC-4021-8FE0-E09E9475FFB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A85A1E5-24AC-4021-8FE0-E09E9475FFB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57B700D5-579D-4A95-A598-68B77098B10F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57B700D5-579D-4A95-A598-68B77098B10F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57B700D5-579D-4A95-A598-68B77098B10F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57B700D5-579D-4A95-A598-68B77098B10F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BA2EEA4-171F-427A-B931-A2D55727AD1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BA2EEA4-171F-427A-B931-A2D55727AD1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BA2EEA4-171F-427A-B931-A2D55727AD1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BA2EEA4-171F-427A-B931-A2D55727AD1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = OCS.MvvmCross.Plugins.MvxAnalytics.Core\OCS.MvvmCross.Plugins.MvxAnalytics.Core.csproj
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedFlat
+		$1.ResourceNamePolicy = FileFormatDefault
+	EndGlobalSection
+EndGlobal
