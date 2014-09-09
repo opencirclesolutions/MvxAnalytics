@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>OCS.MvvmCross.Plugins.MvxAnalytics</id>
+        <version>1.0.0-beta</version>
+        <title>MvvmCross Analytics Plugin</title>
+        <description>Analytics for MvvmCross. Component by Xamarin. Supports iOS and Android. Currently only supports Google Analytics.</description>
+        <authors>Open Circle Solutions</authors>
+        <owners>Open Circle Solutions</owners>
+        <licenseUrl>http://opensource.org/licenses/ms-pl.html</licenseUrl>
+        <projectUrl>https://opencirclesolutions.visualstudio.com/DefaultCollection/MvxAnalytics/_home/index</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <tags>xamarin mvvmcross analytics google android ios winphone</tags>
+        <dependencies>
+            <dependency id="MvvmCross.HotTuna.CrossCore" version="3.1.1" />
+            <dependency id="MvvmCross.HotTuna.Plugin.Color" version="3.1.1" />
+        </dependencies>
+        <releaseNotes>
+1.0
+Initial Beta Release
+        </releaseNotes>
+    </metadata>
+    <files>
+        <!-- PCL -->
+        <file src="../bin/Release/Portable/OCS.MvvmCross.Plugins.MvxAnalytics.dll" target="lib/portable-win+net45+MonoAndroid+MonoTouch+sl50+wp8/OCS.MvvmCross.Plugins.MvxAnalytics.dll" />
+
+        <!-- droid -->
+        <file src="../bin/Release/Portable/OCS.MvvmCross.Plugins.MvxAnalytics.dll" target="lib/MonoAndroid/OCS.MvvmCross.Plugins.MvxAnalytics.dll" />
+        <file src="../bin/Release/MonoAndroid/OCS.MvvmCross.Plugins.MvxAnalytics.Droid.dll" target="lib/MonoAndroid/OCS.MvvmCross.Plugins.MvxAnalytics.Droid.dll" />
+        <file src="../bin/Release/MonoAndroid/GooglePlayServicesLib.dll" target="lib/MonoAndroid/GooglePlayServicesLib.dll" />
+        <file src="../bin/Release/MonoAndroid/Xamarin.Android.Support.v4.dll" target="lib/MonoAndroid/Xamarin.Android.Support.v4.dll" />
+        <file src="../bin/Release/MonoAndroid/Xamarin.Android.Support.v7.AppCompat.dll" target="lib/MonoAndroid/Xamarin.Android.Support.v7.AppCompat.dll" />
+        <file src="../bin/Release/MonoAndroid/Xamarin.Android.Support.v7.MediaRouter.dll" target="lib/MonoAndroid/Xamarin.Android.Support.v7.MediaRouter.dll" />
+        <file src="MvxAnalyticsPluginBootstrap.cs.pp" target="content/MonoAndroid/Bootstrap/MvxAnalyticsPluginBootstrap.cs.pp" />
+
+        <!-- touch -->
+        <file src="../bin/Release/Portable/OCS.MvvmCross.Plugins.MvxAnalytics.dll" target="lib/MonoTouch/OCS.MvvmCross.Plugins.MvxAnalytics.dll" />
+        <file src="../bin/Release/MonoTouch/OCS.MvvmCross.Plugins.MvxAnalytics.Touch.dll" target="lib/MonoTouch/OCS.MvvmCross.Plugins.MvxAnalytics.Touch.dll" />
+        <file src="../bin/Release/MonoTouch/GoogleAnalytics.iOS.dll" target="lib/MonoTouch/GoogleAnalytics.iOS.dll" />
+        <file src="TouchMvxAnalyticsPluginBootstrap.cs.pp" target="content/MonoTouch/Bootstrap/MvxAnalyticsPluginBootstrap.cs.pp" />
+    </files>
+</package>

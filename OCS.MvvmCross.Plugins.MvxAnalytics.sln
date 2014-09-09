@@ -12,6 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspec", "nuspec", "{57B711
 		nuspec\MvxAnalyticsPluginBootstrap.cs.pp = nuspec\MvxAnalyticsPluginBootstrap.cs.pp
 		nuspec\TouchMvxAnalyticsPluginBootstrap.cs.pp = nuspec\TouchMvxAnalyticsPluginBootstrap.cs.pp
 		nuspec\OCS.MvvmCross.Plugins.MvxAnalytics.nuspec = nuspec\OCS.MvvmCross.Plugins.MvxAnalytics.nuspec
+		nuspec\OCS.MvvmCross.Plugins.MvxAnalytics-Mac.nuspec = nuspec\OCS.MvvmCross.Plugins.MvxAnalytics-Mac.nuspec
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCS.MvvmCross.Plugins.MvxAnalytics", "OCS.MvvmCross.Plugins.MvxAnalytics\OCS.MvvmCross.Plugins.MvxAnalytics.csproj", "{2A85A1E5-24AC-4021-8FE0-E09E9475FFB4}"
