@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>OCS.MvvmCross.Plugins.MvxAnalytics.Touch</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>Analytics.Touch</AssemblyName>
+    <AssemblyName>OCS.MvvmCross.Plugins.MvxAnalytics.Touch</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
