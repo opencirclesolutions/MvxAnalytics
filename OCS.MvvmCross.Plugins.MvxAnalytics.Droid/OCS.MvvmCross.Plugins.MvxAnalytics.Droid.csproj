@@ -12,14 +12,14 @@
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
-    <AssemblyName>Analytics.Droid</AssemblyName>
+    <AssemblyName>OCS.MvvmCross.Plugins.MvxAnalytics.Droid</AssemblyName>
     <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug</OutputPath>
+    <OutputPath>..\bin\Debug\MonoDroid\</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -29,7 +29,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release</OutputPath>
+    <OutputPath>..\bin\Release\MonoDroid\</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
@@ -98,9 +98,9 @@
     </XamarinComponentReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OCS.MvvmCross.Plugins.MvxAnalytics.Core\OCS.MvvmCross.Plugins.MvxAnalytics.Core.csproj">
+    <ProjectReference Include="..\OCS.MvvmCross.Plugins.MvxAnalytics\OCS.MvvmCross.Plugins.MvxAnalytics.csproj">
       <Project>{2A85A1E5-24AC-4021-8FE0-E09E9475FFB4}</Project>
-      <Name>OCS.MvvmCross.Plugins.MvxAnalytics.Core</Name>
+      <Name>OCS.MvvmCross.Plugins.MvxAnalytics</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

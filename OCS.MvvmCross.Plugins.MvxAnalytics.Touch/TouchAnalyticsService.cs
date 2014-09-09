@@ -1,5 +1,5 @@
 ﻿using GoogleAnalytics.iOS;
-using OCS.MvvmCross.Plugins.MvxAnalytics.Core;
+using OCS.MvvmCross.Plugins.MvxAnalytics;
 
 namespace OCS.MvvmCross.Plugins.MvxAnalytics.Touch
 {

@@ -1,6 +1,6 @@
 ﻿using Cirrious.CrossCore.Plugins;
 using Cirrious.CrossCore;
-using OCS.MvvmCross.Plugins.MvxAnalytics.Core;
+using OCS.MvvmCross.Plugins.MvxAnalytics;
 
 namespace OCS.MvvmCross.Plugins.MvxAnalytics.Droid
 {

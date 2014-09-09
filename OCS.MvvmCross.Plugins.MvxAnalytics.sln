@@ -1,11 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCS.MvvmCross.Plugins.MvxAnalytics.Core", "OCS.MvvmCross.Plugins.MvxAnalytics.Core\OCS.MvvmCross.Plugins.MvxAnalytics.Core.csproj", "{2A85A1E5-24AC-4021-8FE0-E09E9475FFB4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCS.MvvmCross.Plugins.MvxAnalytics.Touch", "OCS.MvvmCross.Plugins.MvxAnalytics.Touch\OCS.MvvmCross.Plugins.MvxAnalytics.Touch.csproj", "{9BA2EEA4-171F-427A-B931-A2D55727AD1F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCS.MvvmCross.Plugins.MvxAnalytics.Droid", "OCS.MvvmCross.Plugins.MvxAnalytics.Droid\OCS.MvvmCross.Plugins.MvxAnalytics.Droid.csproj", "{57B700D5-579D-4A95-A598-68B77098B10F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspec", "nuspec", "{57B71178-A6D4-4C0B-A94E-D8C2DD814452}"
+	ProjectSection(SolutionItems) = preProject
+		nuspec\nuget.exe = nuspec\nuget.exe
+		nuspec\pack.cmd = nuspec\pack.cmd
+		nuspec\MvxAnalyticsPluginBootstrap.cs.pp = nuspec\MvxAnalyticsPluginBootstrap.cs.pp
+		nuspec\TouchMvxAnalyticsPluginBootstrap.cs.pp = nuspec\TouchMvxAnalyticsPluginBootstrap.cs.pp
+		nuspec\OCS.MvvmCross.Plugins.MvxAnalytics.nuspec = nuspec\OCS.MvvmCross.Plugins.MvxAnalytics.nuspec
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCS.MvvmCross.Plugins.MvxAnalytics", "OCS.MvvmCross.Plugins.MvxAnalytics\OCS.MvvmCross.Plugins.MvxAnalytics.csproj", "{2A85A1E5-24AC-4021-8FE0-E09E9475FFB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,8 +35,10 @@ Global
 		{9BA2EEA4-171F-427A-B931-A2D55727AD1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BA2EEA4-171F-427A-B931-A2D55727AD1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = OCS.MvvmCross.Plugins.MvxAnalytics.Core\OCS.MvvmCross.Plugins.MvxAnalytics.Core.csproj
+		StartupItem = OCS.MvvmCross.Plugins.MvxAnalytics.Touch\OCS.MvvmCross.Plugins.MvxAnalytics.Touch.csproj
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = PrefixedFlat

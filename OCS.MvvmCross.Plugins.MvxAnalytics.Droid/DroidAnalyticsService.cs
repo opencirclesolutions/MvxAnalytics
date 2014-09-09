@@ -1,4 +1,5 @@
-﻿using OCS.MvvmCross.Plugins.MvxAnalytics.Core;
+﻿using OCS.MvvmCross.Plugins.MvxAnalytics;
+using Android.Gms.Analytics;
 
 namespace OCS.MvvmCross.Plugins.MvxAnalytics.Droid
 {

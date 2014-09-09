@@ -1,7 +1,7 @@
 ﻿using Cirrious.CrossCore.Plugins;
 using Cirrious.CrossCore;
 
-namespace OCS.MvvmCross.Plugins.MvxAnalytics.Core
+namespace OCS.MvvmCross.Plugins.MvxAnalytics
 {
 	public class PluginLoader : IMvxPluginLoader
 	{

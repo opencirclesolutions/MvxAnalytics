@@ -1,4 +1,4 @@
-﻿namespace OCS.MvvmCross.Plugins.MvxAnalytics.Core
+﻿namespace OCS.MvvmCross.Plugins.MvxAnalytics
 {
 	public interface IAnalyticsService
 	{
