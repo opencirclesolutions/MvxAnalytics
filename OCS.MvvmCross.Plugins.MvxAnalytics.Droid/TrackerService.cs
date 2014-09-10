@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-using Android.App;
+﻿using Android.App;
 using Android.Gms.Analytics;
 
 namespace OCS.MvvmCross.Plugins.MvxAnalytics.Droid
@@ -8,6 +6,9 @@ namespace OCS.MvvmCross.Plugins.MvxAnalytics.Droid
 	public class TrackerService {
 
 		private static TrackerService _trackerService;
+
+		private Tracker Tracker { get; set;}
+
 		private TrackerService() {
 		}
 
@@ -23,27 +24,28 @@ namespace OCS.MvvmCross.Plugins.MvxAnalytics.Droid
 			}
 		}
 
-		public enum TrackerName {
-			APP_TRACKER, // Tracker used only in this app.
-			GLOBAL_TRACKER, // Tracker used by all the apps from a company. eg: roll-up tracking.
-			ECOMMERCE_TRACKER, // Tracker used by all ecommerce transactions from a company.
-		}
+		public Tracker GetTracker(AnalyticsConfiguration configuration) {
+			if (Tracker == null) {
+				var analytics = GoogleAnalytics.GetInstance (Application.Context);
+				analytics.Logger.LogLevel = (int)configuration.LogLevel;
+				analytics.SetLocalDispatchPeriod (configuration.DispatchPeriod);
+				analytics.SetDryRun (configuration.DryRun);
 
-		Dictionary<TrackerName, Tracker> Trackers = new Dictionary<TrackerName, Tracker>();
+				Tracker = analytics.NewTracker (configuration.TrackingId);
+				Tracker.SetSampleRate (configuration.SampleFrequency);
+				Tracker.SetAnonymizeIp (configuration.AnonymizeIp);
+				Tracker.EnableExceptionReporting (configuration.ReportUncaughtExceptions);
 
-		public Tracker GetTracker(TrackerName trackerId) {
-			Tracker tracker = null;
-			Trackers.TryGetValue(trackerId, out tracker);
+				if (!string.IsNullOrEmpty (configuration.AppName)) {
+					Tracker.SetAppName (configuration.AppName);
+				}
 
-			if (tracker == null) {
-				GoogleAnalytics analytics = GoogleAnalytics.GetInstance (Application.Context);
-//				GoogleAnalytics.GetInstance(Application.Context).Logger.LogLevel = LoggerLogLevel.Verbose;
-				tracker = analytics.NewTracker ("");
-				Trackers.Add (trackerId, tracker);
-
+				if (!string.IsNullOrEmpty (configuration.AppVersion)) {
+					Tracker.SetAppVersion (configuration.AppVersion);
+				}
 			}
 
-			return tracker;
+			return Tracker;
 		}
 	}
 }

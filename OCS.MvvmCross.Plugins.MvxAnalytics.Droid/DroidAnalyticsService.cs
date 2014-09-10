@@ -3,26 +3,41 @@ using Android.Gms.Analytics;
 
 namespace OCS.MvvmCross.Plugins.MvxAnalytics.Droid
 {
-	public class DroidAnalyticsService : IAnalyticsService
+	public class DroidAnalyticsService : AbstractAnalyticsService
 	{
-		public DroidAnalyticsService ()
-		{
+		public DroidAnalyticsService () { }
+
+		public override void TrackView(string viewName) {
+			var tracker = TrackerService.Instance.GetTracker (Configuration);
+
+			tracker.SetScreenName (viewName);
+
+			tracker.Send(new HitBuilders.ScreenViewBuilder().Build());
 		}
 
-		public void TrackView(string viewName) {
-			#if DEBUG
-				return;
-			#else
-				// Get tracker.
-				var tracker = TrackerService.Instance.GetTracker (TrackerService.TrackerName.APP_TRACKER);
+		public override void TrackEvent(string category, string action, string label) {
+			var tracker = TrackerService.Instance.GetTracker (Configuration);
 
-				// Set screen name.
-				// Where path is a String representing the screen name.
-				tracker.SetScreenName (viewName);
+			var analyticsEvent = new HitBuilders.EventBuilder ()
+				.SetCategory (category)
+				.SetAction (action)
+				.SetLabel (label)
+				.SetValue (1)
+				.Build ();
 
-				// Send a screen view.
-				tracker.Send(new HitBuilders.ScreenViewBuilder().Build());
-			#endif
+			tracker.Send (analyticsEvent);
+		}
+
+		public override void TrackEvent(string action, string label) {
+			var tracker = TrackerService.Instance.GetTracker (Configuration);
+
+			var analyticsEvent = new HitBuilders.EventBuilder ()
+				.SetAction (action)
+				.SetLabel (label)
+				.SetValue (1)
+				.Build ();
+
+			tracker.Send (analyticsEvent);
 		}
 	}
 }
