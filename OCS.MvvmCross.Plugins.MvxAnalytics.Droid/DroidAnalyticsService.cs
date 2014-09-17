@@ -27,17 +27,5 @@ namespace OCS.MvvmCross.Plugins.MvxAnalytics.Droid
 
 			tracker.Send (analyticsEvent);
 		}
-
-		public override void TrackEvent(string action, string label) {
-			var tracker = TrackerService.Instance.GetTracker (Configuration);
-
-			var analyticsEvent = new HitBuilders.EventBuilder ()
-				.SetAction (action)
-				.SetLabel (label)
-				.SetValue (1)
-				.Build ();
-
-			tracker.Send (analyticsEvent);
-		}
 	}
 }

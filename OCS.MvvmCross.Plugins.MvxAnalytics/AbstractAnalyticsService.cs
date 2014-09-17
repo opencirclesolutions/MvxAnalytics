@@ -15,7 +15,6 @@
 		}
 			
 		public abstract void TrackView (string viewName);
-		public abstract void TrackEvent (string action, string label);
 		public abstract void TrackEvent (string category, string action, string label);
 
 		public AnalyticsConfiguration Configuration { get; private set; }

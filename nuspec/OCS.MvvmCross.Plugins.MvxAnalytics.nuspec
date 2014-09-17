@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>OCS.MvvmCross.Plugins.MvxAnalytics</id>
-        <version>1.0.0-beta8</version>
+        <version>1.0.0-beta9</version>
         <title>MvvmCross Analytics Plugin</title>
         <description>Analytics for MvvmCross. Component by Xamarin. Supports iOS and Android. Currently only supports Google Analytics.</description>
         <authors>Open Circle Solutions</authors>

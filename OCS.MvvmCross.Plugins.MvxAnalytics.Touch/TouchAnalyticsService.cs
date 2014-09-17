@@ -19,11 +19,5 @@ namespace OCS.MvvmCross.Plugins.MvxAnalytics.Touch
 
 			tracker.Send (GAIDictionaryBuilder.CreateEvent(category, action, label, 1).Build());
 		}
-
-		public override void TrackEvent(string action, string label) {
-			var tracker = TrackerService.Instance.GetTracker(Configuration);
-
-			tracker.Send (GAIDictionaryBuilder.CreateEvent("", action, label, 1).Build ());
-		}
 	}
 }
