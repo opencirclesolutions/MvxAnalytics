@@ -6,7 +6,7 @@
 		{
 			this.Configuration = new AnalyticsConfiguration {
 				LogLevel = LogLevel.Warning,
-				DispatchPeriod = 30,
+				DispatchPeriod = 1800,
 				SampleFrequency = 100.0,
 				AnonymizeIp = false,
 				ReportUncaughtExceptions = false,
