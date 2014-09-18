@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>OCS.MvvmCross.Plugins.MvxAnalytics</id>
-        <version>1.0.0-beta10</version>
+        <version>1.0.0</version>
         <title>MvvmCross Analytics Plugin</title>
         <description>Analytics for MvvmCross. Component by Xamarin. Supports iOS and Android. Currently only supports Google Analytics.</description>
         <authors>Open Circle Solutions</authors>
@@ -14,8 +14,7 @@
             <dependency id="MvvmCross.HotTuna.CrossCore" version="3.1.1" />
         </dependencies>
         <releaseNotes>
-1.0
-Initial Beta Release
+1.0 Initial release with iOS and Android support.
         </releaseNotes>
     </metadata>
     <files>
