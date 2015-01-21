@@ -1,4 +1,4 @@
-﻿using Cirrious.CrossCore.Plugins;
+using Cirrious.CrossCore.Plugins;
 using Cirrious.CrossCore;
 using OCS.MvvmCross.Plugins.MvxAnalytics;
 

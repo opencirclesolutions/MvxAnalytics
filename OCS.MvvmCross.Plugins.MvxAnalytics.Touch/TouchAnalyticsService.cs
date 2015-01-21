@@ -11,7 +11,7 @@ namespace OCS.MvvmCross.Plugins.MvxAnalytics.Touch
 			var tracker = TrackerService.Instance.GetTracker(Configuration);
 
 			tracker.Set (GAIConstants.ScreenName, viewName);
-			tracker.Send(GAIDictionaryBuilder.CreateAppView().Build());
+			tracker.Send(GAIDictionaryBuilder.CreateScreenView().Build());
 		}
 
 		public override void TrackEvent(string category, string action, string label) {

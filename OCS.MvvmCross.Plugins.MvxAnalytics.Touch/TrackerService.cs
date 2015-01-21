@@ -25,7 +25,7 @@ namespace OCS.MvvmCross.Plugins.MvxAnalytics.Touch
 
 		public IGAITracker GetTracker(AnalyticsConfiguration configuration) {
 			if (Tracker == null) {
-				GAI.SharedInstance.Logger.LogLevel = GetLogLevel (configuration.LogLevel);
+				GAI.SharedInstance.Logger.SetLogLevel (GetLogLevel (configuration.LogLevel));
 				GAI.SharedInstance.DispatchInterval = configuration.DispatchPeriod;
 				GAI.SharedInstance.DryRun = configuration.DryRun;
 				GAI.SharedInstance.TrackUncaughtExceptions = configuration.ReportUncaughtExceptions;
